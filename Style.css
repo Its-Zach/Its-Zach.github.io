@@ -1,8 +1,9 @@
 body {
     margin: 0;
     font-family: 'M PLUS 2 Variable', sans-serif;
-    background-color: rgb(5, 4, 23);
-    overflow-x: hidden; /* Prevent horizontal scrolling for the entire page */
+    background-color: rgb(1, 0, 9);
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling for the entire page */
 }
 
 .container {
@@ -12,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 h1 {
     color: rgb(184, 184, 184);
     font-size: 3.5rem;
@@ -47,13 +49,13 @@ h1 {
 .grid-item.span-2x2 {
     grid-column: span 2;
     grid-row: span 2;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .grid-item.span-2x5 {
     grid-column: span 2;
     grid-row: span 5;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .grid-item.span-1x4 {
@@ -65,7 +67,7 @@ h1 {
 .grid-item.span-1x8 {
     grid-column: span 1;
     grid-row: span 8;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 /* Hover variants for grid items */
@@ -84,6 +86,7 @@ h1 {
 .grid-item.span-1x8:hover {
     transform: scale(1.05);
 }
+
 a {
     color: rgb(240, 240, 240);
     text-decoration: none;
@@ -91,40 +94,17 @@ a {
     transition: color 0.3s;
     font-family: "tiemposText", "tiemposText Fallback";
 }
-/*Carousel*/
-.carousel-container {
-    width: 100vw; /* Full viewport width */
-    overflow-x: scroll; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent images from wrapping */
-    padding: 30px 80px 30px 80px;
-    position: relative;
-}
 
-.carousel {
-    display: flex;
-    gap: 15px; /* Spacing between images */
-    padding: 15px;
-    scroll-snap-type: x mandatory;
-}
-
-.carousel img {
-    width: 300px; /* Adjust image size */
-    height: 500px; /* Adjust image size */
-    object-fit: cover;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-    border-radius: 10px;
-}
 /*Table*/
 table {
-    width: 80%;
+    width: 90%;
     border-collapse: collapse;
     margin: 50px;
-    
+
 }
+
 /*Table Header*/
 th {
-    background-color: rgb(5, 4, 23);
     color: rgb(240, 240, 240);
     font-weight: 700;
     padding-left: 20px;
@@ -133,11 +113,13 @@ th {
     font-size: 1.2rem;
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 td {
     padding: 5px;
     border-bottom: 1px solid rgba(240, 240, 240, 0.3);
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .projectTitle {
     color: rgb(240, 240, 240);
     font-size: 1.1rem;
@@ -147,12 +129,183 @@ td {
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
 }
-.platfrom {
+
+.platform {
     color: rgb(201, 201, 201);
     font-size: 1rem;
     margin-bottom: 10px;
+    margin-left: 20px;
     border-radius: 10px;
     line-height: 1.5;
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
+    font-weight: 200;
+}
+
+/*Cards*/
+.card {
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.image-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+    background-color: #1C1C25;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.text-container h2 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text-container p {
+    margin: 5px 0 0;
+    font-size: 19px;
+    line-height: 1.4;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text-container a {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 5px 0 0;
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Scrolling container */
+.scrolling-container {
+    display: flex;
+    overflow-x: auto;
+    /* Allows horizontal scrolling */
+    padding: 20px 0;
+    margin-left: 5%;
+    scroll-snap-type: x mandatory;
+    /* Ensures smooth snapping to each card */
+    gap: 16px;
+    /* Space between cards */
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+}
+
+/* Card styling */
+.card {
+    width: 300px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    /* Prevents cards from shrinking */
+    scroll-snap-align: start;
+    /* Snaps each card to the start */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Scales the card slightly */
+    z-index: 1;
+    /* Ensures the card stays on top when scaled */
+}
+
+/* Scrollbar Styling */
+.scrolling-container::-webkit-scrollbar {
+    height: 8px;
+    /* Makes the scrollbar thinner */
+}
+
+.scrolling-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Darker thumb */
+    border-radius: 10px;
+}
+
+.scrolling-container::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Darker track for better contrast */
+}
+
+
+/* Modal Styling */
+.modal-content {
+    background-color: rgb(28, 28, 37); /* Matches the dark theme */
+    color: rgb(240, 240, 240); /* Light text for contrast */
+    border-radius: 10px; /* Matches your border-radius style */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3); /* Consistent shadow style */
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; /* Matches your font style */
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for separation */
+    color: rgb(201, 201, 201); /* Slightly dimmed text for body */
+    font-weight: 600; /* Matches your font-weight style */
+}
+
+.modal-title {
+    color: rgb(240, 240, 240); /* Light text */
+    font-size: 1.8rem; /* Matches your header font size */
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.modal-body {
+    color: rgb(201, 201, 201); /* Slightly dimmed text for body */
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.modal-body h2 {
+    color: rgb(220, 220, 220); /* Light text */
+    font-size: 1.5rem; /* Matches your header font size */
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for separation */
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.modal-footer .btn {
+    background-color: rgba(255, 255, 255, 0.1); /* Matches your card background */
+    color: rgb(240, 240, 240); /* Light text */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    border-radius: 8px; /* Matches your border-radius style */
+    font-size: 1rem;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.modal-footer .btn:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly brighter on hover */
+    color: rgb(255, 255, 255); /* Brighter text on hover */
 }

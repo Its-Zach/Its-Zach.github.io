@@ -4,6 +4,7 @@
     <title>Home</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="Style.css">
 </head>
 
@@ -12,21 +13,79 @@
                 target="_blank">Zach Rojas</a></em> is a Technical Artist at <em><a
                 href="https://www.boisestate.edu/gimm/gimmworks/" target="_blank">GIMM Works</a></em>, working on 3D
         assets and UI Design, immersing users in virtual worlds and helping them navigate throughout. He spends his time
-        writing, thinking, rethinking, petting dogs, and talking about <em><a
-                href="https://www.boisestate.edu/gimm/gimmworks/" target="_blank">Design:</a></em> how it scales, when
-        it breaks, and how to maintain it.</h1>
+        writing, thinking, rethinking, petting dogs, and <em><a href="https://www.boisestate.edu/gimm/gimmworks/"
+                target="_blank">Talking About Design;</a></em> All of this can be found below in further detail</h1>
 
-    <div class="carousel-container">
-        <div class="carousel">
-            <img src="C:\Users\zachr\OneDrive\Desktop\HOLDER.png" alt="Image 1">
-            <img src="C:\Users\zachr\OneDrive\Desktop\HOLDER.png" alt="Image 2">
-            <img src="C:\Users\zachr\OneDrive\Desktop\HOLDER.png" alt="Image 3">
-            <img src="C:\Users\zachr\OneDrive\Desktop\HOLDER.png" alt="Image 4">
-            <img src="C:\Users\zachr\OneDrive\Desktop\HOLDER.png" alt="Image 5">
-            <img src="C:\Users\zachr\OneDrive\Desktop\HOLDER.png" alt="Image 6">
 
+    <div class="scrolling-container">
+        <div href="#" data-bs-toggle="modal" data-bs-target="#artifactModal" class="card">
+            <div class="image-container">
+                <img src="HOLDER.png" alt="Artifact Image">
+            </div>
+            <div class="text-container">
+                <h2>Hand of God</h2>
+                <a>Game Design</a>
+                <p>AR/VR game developed entirely by me over the course of 1 year</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="HOLDER.png" alt="Artifact Image">
+            </div>
+            <div class="text-container">
+                <h2>VR Hunter Saftey</h2>
+                <a>3D Modeling</a>
+                <p>VR game intended to enhance hunter saftey ciriculum</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="HOLDER.png" alt="Artifact Image">
+            </div>
+            <div class="text-container">
+                <h2>Microchip Makers</h2>
+                <a>Level Design</a>
+                <p>Educational VR experience following the process of microchip fabrication</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="HOLDER.png" alt="Artifact Image">
+            </div>
+            <div class="text-container">
+                <h2>Treasure Valley Water Hub</h2>
+                <a>UI/UX</a>
+                <p>Water access and watershed resource for the Treasure Valley</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="HOLDER.png" alt="Artifact Image">
+            </div>
+            <div class="text-container">
+                <h2>Artifact Title 5</h2>
+                <a>Tag</a>
+                <p>Description for artifact 5.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <img src="HOLDER.png" alt="Artifact Image">
+            </div>
+            <div class="text-container">
+                <h2>Artifact Title 6</h2>
+                <a>Tag</a>
+                <p>Description for artifact 6.</p>
+            </div>
         </div>
     </div>
+
+
 
     <div class="container">
         <div class="grid">
@@ -47,12 +106,63 @@
                 </tr>
                 <tr>
                     <td>
+                        <h5 class="projectTitle">Hand of God</h5>
+                        <a class="platform">VR/AR Game Development, 3D Modeling, Full Pipline</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5 class="projectTitle">Fish & Game | VR Hunter Saftey</h5>
+                        <a class="platform">3D Modeling</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>2024</th>
+                </tr>
+                <tr>
+                    <td>
                         <h5 class="projectTitle">Treasure Valley Water Atlas</h5>
-                        <p class="platform">iOS App</p>
+                        <a class="platform">Web UI Design</a>
                     </td>
                 </tr>
             </tbody>
         </table>
+    </div>
+
+    <!-- Add this modal structure at the bottom of your body -->
+    <div class="modal fade" id="artifactModal" tabindex="-1" aria-labelledby="artifactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="artifactModalLabel">Hand of God</h5>
+                </div>
+                <div class="modal-body">
+                    <!-- Replace this with the content you want to display -->
+                    <h2>Overview</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Include Bootstrap JS (optional, for interactive components) -->
