@@ -155,16 +155,17 @@ td {
 }
 
 .image-container {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+    width: 596px; /* Set the desired width */
+    height: 305px; /* Set the desired height */
+    overflow: hidden; /* Ensure no overflow */
+    position: relative; /* For proper positioning */
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center; /* Centers the image within the container */
 }
 
 .text-container {
@@ -287,6 +288,11 @@ td {
     font-size: 1.5rem; /* Matches your header font size */
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.modal-body h3 {
+    color: rgb(220, 220, 220); /* Light text */
+    font-size: 1rem; /* Matches your header font size */
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 .modal-footer {
     border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for separation */
@@ -308,4 +314,7 @@ td {
 .modal-footer .btn:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Slightly brighter on hover */
     color: rgb(255, 255, 255); /* Brighter text on hover */
+}
+.modal-body img {
+    margin: 10 0 10 0;
 }
