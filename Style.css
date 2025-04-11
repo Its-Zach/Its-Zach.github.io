@@ -155,7 +155,7 @@ td {
 }
 
 .image-container {
-    width: 596px; /* Set the desired width */
+    width: 298px; /* Set the desired width */
     height: 305px; /* Set the desired height */
     overflow: hidden; /* Ensure no overflow */
     position: relative; /* For proper positioning */
