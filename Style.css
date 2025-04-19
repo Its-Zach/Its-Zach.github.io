@@ -187,7 +187,7 @@ td {
 
 .text-container p {
     margin: 5px 0 0;
-    font-size: 19px;
+    font-size: 1.2rem;
     line-height: 1.4;
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -195,7 +195,8 @@ td {
 .text-container a {
     color: rgba(255, 255, 255, 0.5);
     margin: 5px 0 0;
-    font-size: 18px;
+    font-size: 1.05rem;
+    font-weight: 200;
     line-height: 1.4;
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
